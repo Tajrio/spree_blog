@@ -12,6 +12,7 @@ module Spree
       else
         @post = Spree::Post.by_store(current_store).available.friendly.find(params[:id])
       end
+      @title = @post.title
     end
 
   end
